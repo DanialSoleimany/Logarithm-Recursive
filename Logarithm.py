@@ -1,10 +1,10 @@
-def log_rec(x, y):
-    if (x == 1):
+def log_rec(argument, base):
+    if (argument == 1):
         return 0
     else:
-        return 1 + log_rec(x/y, y) 
+        return 1 + log_rec(argument/base, base) 
      
-x = int(input("value: "))
-y = int(input("base: "))
+argument = int(input("argument: "))
+base = int(input("base: "))
 
-print(log_rec(x, y))
+print("Exponent : {0}".format(log_rec(argument, base)))
